@@ -1,6 +1,6 @@
 # Autoencoder ND - 1-6D Convolutional Layers
 
-This project explores how convolutional autoencoders can be implemented with layers of different dimensionalities, from 1D to 6D. While we always start with the same 2D image data, we process it through neural networks whose internal layers operate on tensors of increasing dimensionality.
+This project explores how convolutional autoencoders can be implemented with layers of different dimensionalities, from 1D to 6D. While we always start with the same 2D image data, we process it through neural networks whose internal layers operate on tensors of increasing dimensionality, 1D-6D.
 
 This is an exploration with Cursor + Claude 3.7
 
@@ -34,7 +34,7 @@ For dimensions higher than 3D, we implement a hierarchical convolution approach:
 - **5D**: Implement 5D convolutions using multiple 4D convolutions
 - **6D**: Implement 6D convolutions using multiple 5D convolutions
 
-This hierarchical approach demonstrates how convolution operations can be extended to arbitrarily high dimensions.
+This hierarchical approach demonstrates how convolution operations can be extended to arbitrarily high dimensions. Also note the actual dimensions of the encoders is 2 higher due to how convolutional neural networks are implemented as it's comprised of spatial dimensions and I/O channel dimensions.
 
 ## Results Visualization
 
@@ -58,6 +58,7 @@ Below are the individual training loss curves:
 |:---:|:---:|
 | ![5D Training Loss](5d/training_loss.png) | ![6D Training Loss](6d/training_loss.png) |
 
+Note: Training times increased considerably as the dimensionality increased.
 ### Reconstruction Quality
 
 Each model attempts to reconstruct the original image. Below are the reconstruction results:
@@ -73,3 +74,23 @@ Each model attempts to reconstruct the original image. Below are the reconstruct
 | 5D Autoencoder | 6D Autoencoder |
 |:---:|:---:|
 | ![5D Reconstruction](5d/reconstructed.png) | ![6D Reconstruction](6d/reconstructed.png) |
+
+## Pokémon Dataset Experiments
+
+In addition to the grayscale image experiments, we also applied our autoencoder architectures to a dataset of 151 Pokémon sprites from the first generation games.
+
+### Training Loss
+
+Below are the training loss curves for the Pokémon autoencoder models:
+
+| 2D Layers | 3D Layers |
+|:---:|:---:|
+| ![2D Pokémon Training Loss](2d_pokemon/training_loss.png) | ![3D Pokémon Training Loss](3d_pokemon/training_loss.png) |
+
+### Reconstruction Quality
+
+Each model attempts to reconstruct the original Pokémon sprites. Below are the reconstruction results:
+
+| 2D Layers | 3D Layers |
+|:---:|:---:|
+| ![2D Pokémon Reconstructions](2d_pokemon/reconstructed_all.png) | ![3D Pokémon Reconstructions](3d_pokemon/reconstructed_all.png) |
