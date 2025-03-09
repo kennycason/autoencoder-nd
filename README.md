@@ -6,7 +6,7 @@ This is an exploration with Cursor + Claude 3.7
 
 ## Project Overview
 
-A autoencoder is a type of neural network that consists of two parts:
+An autoencoder is a type of neural network that consists of two parts:
 1. An **encoder** (a convolutional neural network that compresses the input)
 2. A **decoder** (a transposed convolutional neural network that reconstructs the input)
 
@@ -46,72 +46,30 @@ Each model was trained for 500 epochs on the same input image. Below is the comb
 
 Below are the individual training loss curves:
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%;">
-    <h4>1D Autoencoder</h4>
-    <img src="1d/training_loss.png" alt="1D Training Loss" style="width: 100%;">
-  </div>
-  <div style="flex: 50%;">
-    <h4>2D Autoencoder</h4>
-    <img src="2d/training_loss.png" alt="2D Training Loss" style="width: 100%;">
-  </div>
-</div>
+| 1D Autoencoder | 2D Autoencoder |
+|:---:|:---:|
+| ![1D Training Loss](1d/training_loss.png) | ![2D Training Loss](2d/training_loss.png) |
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%;">
-    <h4>3D Autoencoder</h4>
-    <img src="3d/training_loss.png" alt="3D Training Loss" style="width: 100%;">
-  </div>
-  <div style="flex: 50%;">
-    <h4>4D Autoencoder</h4>
-    <img src="4d/training_loss.png" alt="4D Training Loss" style="width: 100%;">
-  </div>
-</div>
+| 3D Autoencoder | 4D Autoencoder |
+|:---:|:---:|
+| ![3D Training Loss](3d/training_loss.png) | ![4D Training Loss](4d/training_loss.png) |
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%;">
-    <h4>5D Autoencoder</h4>
-    <img src="5d/training_loss.png" alt="5D Training Loss" style="width: 100%;">
-  </div>
-  <div style="flex: 50%;">
-    <h4>6D Autoencoder</h4>
-    <img src="6d/training_loss.png" alt="6D Training Loss" style="width: 100%;">
-  </div>
-</div>
+| 5D Autoencoder | 6D Autoencoder |
+|:---:|:---:|
+| ![5D Training Loss](5d/training_loss.png) | ![6D Training Loss](6d/training_loss.png) |
 
 ### Reconstruction Quality
 
 Each model attempts to reconstruct the original image. Below are the reconstruction results:
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%;">
-    <h4>1D Autoencoder</h4>
-    <img src="1d/reconstructed.png" alt="1D Reconstruction" style="width: 100%;">
-  </div>
-  <div style="flex: 50%;">
-    <h4>2D Autoencoder</h4>
-    <img src="2d/reconstructed.png" alt="2D Reconstruction" style="width: 100%;">
-  </div>
-</div>
+| 1D Autoencoder | 2D Autoencoder |
+|:---:|:---:|
+| ![1D Reconstruction](1d/reconstructed.png) | ![2D Reconstruction](2d/reconstructed.png) |
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%;">
-    <h4>3D Autoencoder</h4>
-    <img src="3d/reconstructed.png" alt="3D Reconstruction" style="width: 100%;">
-  </div>
-  <div style="flex: 50%;">
-    <h4>4D Autoencoder</h4>
-    <img src="4d/reconstructed.png" alt="4D Reconstruction" style="width: 100%;">
-  </div>
-</div>
+| 3D Autoencoder | 4D Autoencoder |
+|:---:|:---:|
+| ![3D Reconstruction](3d/reconstructed.png) | ![4D Reconstruction](4d/reconstructed.png) |
 
-<div style="display: flex; flex-wrap: wrap;">
-  <div style="flex: 50%;">
-    <h4>5D Autoencoder</h4>
-    <img src="5d/reconstructed.png" alt="5D Reconstruction" style="width: 100%;">
-  </div>
-  <div style="flex: 50%;">
-    <h4>6D Autoencoder</h4>
-    <img src="6d/reconstructed.png" alt="6D Reconstruction" style="width: 100%;">
-  </div>
-</div>
+| 5D Autoencoder | 6D Autoencoder |
+|:---:|:---:|
+| ![5D Reconstruction](5d/reconstructed.png) | ![6D Reconstruction](6d/reconstructed.png) |
