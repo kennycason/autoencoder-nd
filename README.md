@@ -87,13 +87,13 @@ In addition to the grayscale image experiments, we also applied our autoencoder 
 
 Each model attempts to reconstruct the original Pokémon sprites. Below are the reconstruction results:
 
-| 2D Layer | 3D Layer |
+| 1D Layer | 2D Layer |
 |:---:|:---:|
-| ![2D Pokémon Reconstructions](2d_pokemon/reconstructed_all.png) | ![3D Pokémon Reconstructions](3d_pokemon/reconstructed_all.png) |
+| ![1D Pokémon Reconstructions](1d_pokemon/reconstructed_all.png) | ![2D Pokémon Reconstructions](2d_pokemon/reconstructed_all.png) |
 
-| 4D Layer |  |
+| 3D Layer | 4D Layer |
 |:---:|:---:|
-| ![4D Pokémon Reconstructions](4d_pokemon/reconstructed_all.png) |　 |
+| ![3D Pokémon Reconstructions](3d_pokemon/reconstructed_all.png) |![4D Pokémon Reconstructions](4d_pokemon/reconstructed_all.png) |
 
 
 ### Combined Training Loss
@@ -106,10 +106,10 @@ The following graph shows the training loss curves for all Pokémon autoencoder 
 
 Below are the individual training loss curves for the Pokémon autoencoder models:
 
-| 2D Layer | 3D Layer |
+| 1D Layer | 2D Layer |
 |:---:|:---:|
-| ![2D Pokémon Training Loss](2d_pokemon/training_loss.png) | ![3D Pokémon Training Loss](3d_pokemon/training_loss.png) |
+| ![1D Pokémon Training Loss](1d_pokemon/training_loss.png) | ![2D Pokémon Training Loss](2d_pokemon/training_loss.png) |
 
-| 4D Layer |  |
+| 3D Layer | 4D Layer |
 |:---:|:---:|
-| ![4D Pokémon Training Loss](4d_pokemon/training_loss.png) |  |
+| ![3D Pokémon Training Loss](3d_pokemon/training_loss.png) | ![4D Pokémon Training Loss](4d_pokemon/training_loss.png) |
