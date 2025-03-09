@@ -1,0 +1,22 @@
+
+Epoch [500/1500], Loss: 0.011509, Time: 1436.61s
+Epoch [550/1500], Loss: 0.011081, Time: 1576.03s
+Epoch [600/1500], Loss: 0.010877, Time: 1714.98s
+Epoch [650/1500], Loss: 0.010053, Time: 1854.54s
+Epoch [700/1500], Loss: 0.009774, Time: 1992.79s
+Epoch [750/1500], Loss: 0.009582, Time: 2131.48s
+Epoch [800/1500], Loss: 0.009399, Time: 2270.12s
+Epoch [850/1500], Loss: 0.009325, Time: 2406.93s
+Epoch [900/1500], Loss: 0.009108, Time: 2542.83s
+Epoch [1000/1500], Loss: 0.008908, Time: 2817.86s
+Epoch [1050/1500], Loss: 0.009070, Time: 2954.22s
+Epoch [1100/1500], Loss: 0.008672, Time: 3096.39s
+Epoch [1150/1500], Loss: 0.008472, Time: 3232.87s
+Epoch [1200/1500], Loss: 0.008301, Time: 3370.34s
+Epoch [1250/1500], Loss: 0.008135, Time: 3507.00s
+Epoch [1300/1500], Loss: 0.007942, Time: 3642.97s
+Epoch [1350/1500], Loss: 0.007792, Time: 3781.69s
+Epoch [1400/1500], Loss: 0.007674, Time: 3919.36s
+Epoch [1450/1500], Loss: 0.007490, Time: 4060.19s
+Saving model...
+Saving training log to CSV...

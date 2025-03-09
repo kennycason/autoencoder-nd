@@ -36,9 +36,24 @@ For dimensions higher than 3D, we implement a hierarchical convolution approach:
 
 This hierarchical approach demonstrates how convolution operations can be extended to arbitrarily high dimensions. Also note the actual dimensions of the encoders is 2 higher due to how convolutional neural networks are implemented as it's comprised of spatial dimensions and I/O channel dimensions.
 
-## Results Visualization
+## Reconstruction
 
-### Training Loss Comparison
+Each model attempts to reconstruct the original image. Below are the reconstruction results:
+
+| 1D Layer | 2D Layer |
+|:---:|:---:|
+| ![1D Reconstruction](1d/reconstructed.png) | ![2D Reconstruction](2d/reconstructed.png) |
+
+| 3D Layer | 4D Layer |
+|:---:|:---:|
+| ![3D Reconstruction](3d/reconstructed.png) | ![4D Reconstruction](4d/reconstructed.png) |
+
+| 5D Layer | 6D Layer |
+|:---:|:---:|
+| ![5D Reconstruction](5d/reconstructed.png) | ![6D Reconstruction](6d/reconstructed.png) |
+
+
+### Training Loss
 
 Each model was trained for 500 epochs on the same input image. Below is the combined training loss curve for all dimensions:
 
@@ -46,51 +61,55 @@ Each model was trained for 500 epochs on the same input image. Below is the comb
 
 Below are the individual training loss curves:
 
-| 1D Autoencoder | 2D Autoencoder |
+| 1D Layer | 2D Layer |
 |:---:|:---:|
 | ![1D Training Loss](1d/training_loss.png) | ![2D Training Loss](2d/training_loss.png) |
 
-| 3D Autoencoder | 4D Autoencoder |
+| 3D Layer | 4D Layer |
 |:---:|:---:|
 | ![3D Training Loss](3d/training_loss.png) | ![4D Training Loss](4d/training_loss.png) |
 
-| 5D Autoencoder | 6D Autoencoder |
+| 5D Layer | 6D Layer |
 |:---:|:---:|
 | ![5D Training Loss](5d/training_loss.png) | ![6D Training Loss](6d/training_loss.png) |
 
 Note: Training times increased considerably as the dimensionality increased.
 ### Reconstruction Quality
 
-Each model attempts to reconstruct the original image. Below are the reconstruction results:
 
-| 1D Autoencoder | 2D Autoencoder |
-|:---:|:---:|
-| ![1D Reconstruction](1d/reconstructed.png) | ![2D Reconstruction](2d/reconstructed.png) |
 
-| 3D Autoencoder | 4D Autoencoder |
-|:---:|:---:|
-| ![3D Reconstruction](3d/reconstructed.png) | ![4D Reconstruction](4d/reconstructed.png) |
-
-| 5D Autoencoder | 6D Autoencoder |
-|:---:|:---:|
-| ![5D Reconstruction](5d/reconstructed.png) | ![6D Reconstruction](6d/reconstructed.png) |
 
 ## Pokémon Dataset Experiments
 
 In addition to the grayscale image experiments, we also applied our autoencoder architectures to a dataset of 151 Pokémon sprites from the first generation games.
 
-### Training Loss
-
-Below are the training loss curves for the Pokémon autoencoder models:
-
-| 2D Layers | 3D Layers |
-|:---:|:---:|
-| ![2D Pokémon Training Loss](2d_pokemon/training_loss.png) | ![3D Pokémon Training Loss](3d_pokemon/training_loss.png) |
-
-### Reconstruction Quality
+### Reconstruction
 
 Each model attempts to reconstruct the original Pokémon sprites. Below are the reconstruction results:
 
-| 2D Layers | 3D Layers |
+| 2D Layer | 3D Layer |
 |:---:|:---:|
 | ![2D Pokémon Reconstructions](2d_pokemon/reconstructed_all.png) | ![3D Pokémon Reconstructions](3d_pokemon/reconstructed_all.png) |
+
+| 4D Layer |  |
+|:---:|:---:|
+| ![4D Pokémon Reconstructions](4d_pokemon/reconstructed_all.png) |　 |
+
+
+### Combined Training Loss
+
+The following graph shows the training loss curves for all Pokémon autoencoder models together:
+
+![Combined Pokémon Training Loss](train_loss_pokemon_zoomed.png)
+
+### Training Loss
+
+Below are the individual training loss curves for the Pokémon autoencoder models:
+
+| 2D Layer | 3D Layer |
+|:---:|:---:|
+| ![2D Pokémon Training Loss](2d_pokemon/training_loss.png) | ![3D Pokémon Training Loss](3d_pokemon/training_loss.png) |
+
+| 4D Layer |  |
+|:---:|:---:|
+| ![4D Pokémon Training Loss](4d_pokemon/training_loss.png) |  |
