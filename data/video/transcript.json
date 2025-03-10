@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp": 1.0,
+    "text": "Hello this is"
+  },
+  {
+    "timestamp": 2.0,
+    "text": "a sample video"
+  },
+  {
+    "timestamp": 3.0,
+    "text": "where I talk about"
+  },
+  {
+    "timestamp": 4.0,
+    "text": "Metroid"
+  },
+  {
+    "timestamp": 5.0,
+    "text": "the greatest video game"
+  },
+  {
+    "timestamp": 6.0,
+    "text": "in the world"
+  },
+  {
+    "timestamp": 7.0,
+    "text": "as well as"
+  },
+  {
+    "timestamp": 8.0,
+    "text": "Kotlin the greatest programming"
+  },
+  {
+    "timestamp": 9.0,
+    "text": "language in the"
+  },
+  {
+    "timestamp": 10.0,
+    "text": "world"
+  }
+]
